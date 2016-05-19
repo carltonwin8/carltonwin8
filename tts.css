@@ -1,19 +1,20 @@
-a {
-  display: block;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-}
-
 body {
-  max-width: 900px;
+  max-width: 768px;
   margin-left: auto;
   margin-right: auto;
 }
 
-h1 {
-  text-align: center;
-}
 .container {
   width: 100%;
   box-shadow: 10px 10px 45px -5px rgba(0,0,0,0.75);
+}
+
+textarea {
+  min-width: 100%;
+}
+
+button {
+  min-width: 100%;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
