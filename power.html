@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carltonwin8</title>
+    <link rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Power On Devices At Home</h1>
+        </div>
+      </div>
+
+
+    <div class="row">
+      <div class="col-md-12">
+        <table class="table">
+          <tr><td>LED Lamp</td>
+            <td><button id="btnLampOn" class="button">On</button></td>
+            <td><button id="btnLampOff" class="button">Off</button></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+      integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+      crossorigin="anonymous"></script>
+      <script>
+        function requestCrossDomain(site, callback) {
+          var yql
+        }
+
+        $(function () {
+          $("#btnLampOn").click(function () {
+            var onLink = "http://admin:webPower1Man@10.0.0.201/script?run028=run";
+            requestCrossDomain(onLink, function(results){
+              console.log(data);
+            });
+          });
+          $("#btnLampOff").click(function () {
+            var offLink = "http://admin:webPower1Man@10.0.0.201/script?run030=run";
+            $.get(offLink, function(data){
+              console.log(data);
+            });
+          });
+        });
+        //
+      </script>
+  </body>
+</html>
