@@ -79,8 +79,8 @@
       index = indexEnd;
     });
     $("#clear").click(function (e) {
-      $("#cancel").trigger("click");
       $("textarea").text("");
+      $("#cancel").trigger("click");
     });
     $("form").submit(function (event) {
         index = 0;
